@@ -13,13 +13,13 @@ class Queen(Piece):
             return False
 
 
-    def canMove(self,board,x,y):
+    def canMove(self,board,x,y): #weather a queen can move to x,y or not
         sourceX,sourceY,targetX,targetY=self.x,self.y,x,y
-        if sourceX==targetX and sourceY!=targetY:
+        if sourceX==targetX and sourceY!=targetY: #move in same row
             return True
-        elif sourceX!=targetX and sourceY==targetY:
+        elif sourceX!=targetX and sourceY==targetY: #move in same col
             return True    
-        elif abs(sourceX-targetX)==abs(sourceY-targetY):
+        elif abs(sourceX-targetX)==abs(sourceY-targetY):  #diagnonal move 
             return True    
         else:
             return False
