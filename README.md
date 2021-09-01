@@ -1,5 +1,5 @@
 # Python-django-chess-game
-<<<<<<< HEAD
+
 
 <br>
 
@@ -49,6 +49,4 @@ git clone https://github.com/SohaibAnwaar/Python-django-chess-game.git
 
 1. Mujahid (Add Email Here ) 
 2. Farhan  (Add Email Here)
-=======
-#This is a sample project for python/django learning purpose at Invozone
->>>>>>> 4cac9fdb2fc07f84b6c055f038cdb88131b64454
+
