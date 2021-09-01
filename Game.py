@@ -3,6 +3,24 @@ from Queen import Queen
 from Player import Player
 from Board import Board
 class Game:
+  '''
+  Description:
+
+
+  Input:
+      Init(Variables)
+          Varible  (Type)
+
+
+  
+  Fucntion Exists:
+
+    1. canQueenKill 
+          Title of the fucntion
+
+    2. Second funtion:
+          Title of the funtion
+  '''
 
   def canQueenKill(self):
     print('Welcome to Chess by Mujahid')
