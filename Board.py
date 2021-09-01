@@ -27,6 +27,20 @@ class Board:
     toPut=Box(self.grid[piece.x][piece.y].color,piece)
     self.grid[piece.x][piece.y]=toPut
 
+  def getPiece(self,x,y):
+    return self.grid[x][y].piece
+
+  def movePiece(self,piece,x,y):
+    color=self.grid[piece.x][piece.y].color #maintain box color
+    self.grid[piece.x][piece.y]=Box(color,'') #place empty box
+    color=self.grid[x][y].color
+    piece.x=x
+    piece.y=y
+    self.grid[x][y]=Box(color,piece)
+
+
+
+
 
 
   def printBoard(self):
