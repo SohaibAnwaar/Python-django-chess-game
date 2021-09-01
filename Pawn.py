@@ -4,10 +4,18 @@ from Piece import Piece
 
 class Pawn(Piece):
 
-    def canMove(self,board,x,y):
+    def canMove(self,board,x,y,turn):
         sourceX,sourceY,targetX,targetY=self.x,self.y,x,y
-        if sourceX == targetX and sourceX < targetX and ((sourceX - targetX) == 1 or (sourceX - targetX) == 2):
-            print("true")
-            return True
-        else:
-            return False
+        
+        if turn==1:
+            if  sourceX > targetX and (abs(sourceX - targetX) == 1 or abs(sourceX - targetX) == 2):
+             return True
+            else:
+                return False 
+
+        elif turn==2:
+            if sourceX < targetX and (abs(sourceX - targetX) == 1 or abs(sourceX - targetX) == 2):
+                return True
+            else:
+                return False 
+        
